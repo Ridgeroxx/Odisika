@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo"><img src="images/logo Odi.png" alt=""></a>
+    <div class="icons">
+        <a href="index.html" class="fas fa-arrow-left"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+</header>
+
+<section class="cart-page" id="cart-page">
+    <div class="heading">
+        <h1>Your Cart</h1>
+        <p>Manage your items</p>
+    </div>
+    <div id="cart-items" class="cart-items-list"></div>
+    <div class="cart-total">
+        <h2>Total Price: ₵<span id="total-price">0.00</span></h2>
+    </div>
+    <div class="checkout">
+        <button id="checkout-btn">Proceed to Payment</button>
+    </div>
+</section>
+
+<script src="js/cart.js"></script>
+<script>
+    document.getElementById('checkout-btn').addEventListener('click', function() {
+        window.location.href = 'checkout.html';
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="index.html" class="logo"><img src="images/logo Odi.png" alt="Logo"></a>
+    <div class="icons">
+        <a href="cart.html" class="fas fa-arrow-left"></a>
+    </div>
+</header>
+
+<section class="checkout-page" id="checkout-page">
+    <div class="heading">
+        <h1>Checkout</h1>
+        <p>Review your items and fill in your details to complete the purchase</p>
+    </div>
+    <div id="checkout-items" class="checkout-items-list"></div>
+    <form id="payment-form">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" required>
+        </div>
+        <div class="payment-options">
+            
+            <label>
+                <input type="radio" name="payment" value="vodafone">
+                <img src="images/vodafone.png" alt="Vodafone">
+                Vodafone
+            </label>
+            <label>
+                <input type="radio" name="payment" value="mtn">
+                <img src="images/mtn.png" alt="MTN">
+                MTN
+            </label>
+        </div>
+        <button type="submit" id="pay-btn">Proceed to Payment</button>
+    </form>
+</section>
+
+<div id="payment-prompt" class="payment-prompt">
+    <div class="prompt-content">
+        <p>Payment prompt sent to your phone. Please confirm the payment.</p>
+        <button id="confirm-payment-btn">Confirm Payment</button>
+    </div>
+</div>
+
+<div id="thank-you" class="thank-you">
+    <div class="thank-you-content">
+        <p>Thank you for your purchase! Your order has been successfully placed.</p>
+        <a href="index.html" class="btn">Return to Home</a>
+    </div>
+</div>
+
+<script src="js/checkout.js"></script>
+</body>
+</html>
